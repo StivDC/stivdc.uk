@@ -1,9 +1,9 @@
-name: sample-hugo
+name: stiv-hugo-blog-page
 static_sites:
 - build_command: rm -r ./public; hugo --destination ./public
   environment_slug: hugo
   github:
     branch: main
     deploy_on_push: true
-    repo: digitalocean/sample-hugo
-  name: sample-hugo
+    repo: StivDC/stivdc.uk
+  name: stiv-hugo-blog-page
