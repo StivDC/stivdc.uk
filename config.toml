@@ -1,8 +1,8 @@
 theme = "paper"
 relativeURLs = true
-baseURL = "/"
-title = "Hugo Themes"
-author = "Steve Francia"
+baseURL = "stivdc.uk"
+title = "My personal blog page"
+author = "Steven Davies-Cortes"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 4
 languageCode = "en"
