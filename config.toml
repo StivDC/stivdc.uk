@@ -1,6 +1,6 @@
 theme = "paper"
 relativeURLs = true
-baseURL = "stivdc.uk"
+baseURL = "/"
 title = "My personal blog page"
 author = "Steven Davies-Cortes"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
