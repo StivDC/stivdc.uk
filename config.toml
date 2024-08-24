@@ -1,7 +1,7 @@
 relativeURLs = true
 canonifyURLs = true
 baseURL = "/"
-title = "My personal blog page"
+title = "Steven's personal blog page"
 author = "Steven Davies-Cortes"
 copyright = "Copyright © 2024-2024, Steven Davies-Cortes; all rights reserved."
 paginate = 4
@@ -58,13 +58,13 @@ weight = 4
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors."
+  description = "I'm Steven Davies-Cortes and I've made this little webpage as a way to log anything I find interesting, to showcase any cool projects I'm working on and to link any apps I'm working on on my other website that's to be published."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
   showProjectsList = true # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  projectsUrl = "https://github.com/StivDC" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
@@ -89,10 +89,10 @@ weight = 4
   # https://fontawesome.com/icons?d=gallery&s=brands
   [[params.social]]
     name = "github"
-    link = "https://github.com/gohugoio"
+    link = "https://github.com/StivDC"
   [[params.social]]
     name = "linkedin"
-    link = "https://www.linkedin.com/company/github/"
+    link = "https://www.linkedin.com/in/steven-davies-cortes-8264a3187/"
   [[params.social]]
     name = "email"
-    link = "example@example.com"  # no need for "mailto:" in the head
+    link = "stevenstdc@gmail.com"  # no need for "mailto:" in the head

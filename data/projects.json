@@ -9,6 +9,11 @@
       "name":"Hugo Themes",
       "url":"https://github.com/gohugoio/hugoThemes",
       "desc":"A curated directory of Hugo themes"
+    },
+    {
+      "name": "Coding Game Code",
+      "url": "https://github.com/StivDC/Coding_game_code",
+      "desc": "A repository of cool solutions I created when Sam and I used to play codingame.com"
     }
   ]
 }
