@@ -3,12 +3,12 @@
     {
       "name":"Hugo",
       "url":"https://gohugo.io/",
-      "desc":"The world’s fastest framework for building websites."
+      "desc":"The world’s fastest framework for building websites and what stivdc.uk is made on."
     },
     {
-      "name":"Hugo Themes",
-      "url":"https://github.com/gohugoio/hugoThemes",
-      "desc":"A curated directory of Hugo themes"
+      "name":"stivdc.uk",
+      "url":"https://github.com/StivDC/stivdc.uk",
+      "desc":"The GitHub repository for this website!"
     },
     {
       "name": "Coding Game Code",
