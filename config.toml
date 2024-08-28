@@ -12,6 +12,14 @@ disqusShortname = "example" # Used when comments is enabled. Cactus will use sit
 
 theme = "cactus"
 
+[module]
+  [[module.imports]]
+    path = "github.com/martignoni/hugo-notice"
+  [[module.imports]]
+    path = "cactus"
+
+#####################
+
 # summaryLength = 2
 
 # Main menu which appears below site header.
