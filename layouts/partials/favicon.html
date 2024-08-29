@@ -1,2 +1,2 @@
-<!-- TODO -->
-<link rel="icon" type="image/png" href="{{ "images/favicon.ico"  | absURL }}" />
+{{ $image := resources.Get "images/defaults/favicon.ico" }}
+<link rel="icon" type="image/png" href="{{ $image  | absURL }}" />

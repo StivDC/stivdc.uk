@@ -3,7 +3,7 @@ canonifyURLs = true
 baseURL = "/"
 title = "Steven's personal blog page"
 author = "Steven Davies-Cortes"
-copyright = "Copyright © 2024-2024, Steven Davies-Cortes; all rights reserved."
+copyright = "Steven Davies-Cortes; all rights reserved."
 paginate = 4
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -28,7 +28,7 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Tags"
+name = "Tags" 
 url = "/tags"
 weight = 3
 
@@ -36,6 +36,11 @@ weight = 3
 name = "About"
 url = "/about"
 weight = 4
+
+[[menu.main]]
+name = "Buy me a coffee!"
+url = "https://buymeacoffee.com/stivdc"
+weight = 5
 
 [markup]
   [markup.tableOfContents]
@@ -60,7 +65,7 @@ weight = 4
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "I'm Steven Davies-Cortes and I've made this little webpage as a way to log anything I find interesting, to showcase or write about any cool projects I've done and to link any apps I'm working on my other website that's to be published."
+  description = "I'm Steven and this webpage is my way of staying on top of things and keeping track of interesting work. Learn more about me on the [About page](https://stivdc.uk/about#)"
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
