@@ -93,7 +93,8 @@ weight = 5
       #serverName = "" # Defaults to cactus.chat
 
   # the value of name should be an valid font awesome icon name (brands type)
-  # https://fontawesome.com/icons?d=gallery&s=brands
+  # Only supports FA v5
+  # https://fontawesome.com/v5/search
   [[params.social]]
     name = "github"
     link = "https://github.com/StivDC"
