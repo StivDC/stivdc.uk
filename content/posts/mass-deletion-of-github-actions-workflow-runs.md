@@ -29,7 +29,7 @@ I knew the answer to this lied within creating a script using the [GitHub API](h
 
 My objective was clear, I wanted to either get rid of all workflows under a specific name, or to remove workflows before a certain date. In future, I would even want to add the functionality to select multiple workflows and delete en masse. 
 
-Before I went into possibly reinventing the wheel, I did a quick google and came across two articles to get me started: [DJ Adam's very handy script "mass-deletion-of-github-actions-workflow-runs"](https://qmacro.org/blog/posts/2021/03/26/mass-deletion-of-github-actions-workflow-runs/) and then to fit my use case [Michael Heap's post "Filter for dates before today with jq"](https://michaelheap.com/jq-select-date-before-today/)
+Before I went into possibly reinventing the wheel, I did a quick google and came across two articles to get me started: [DJ Adam's very handy script "mass-deletion-of-github-actions-workflow-runs"](https://qmacro.org/blog/posts/2021/03/26/mass-deletion-of-github-actions-workflow-runs/) and then to fit my date use case [Michael Heap's post "Filter for dates before today with jq"](https://michaelheap.com/jq-select-date-before-today/)
 
 I would fully recommend following DJ's post on the matter, it's very easy to follow and provides a very good starting point for customising what you need from GitHub's API. The following is a variation of his script. 
 
@@ -66,7 +66,7 @@ Which will neatly return:
 There's built-in support for pagination with gh api, with the `--paginate` switch.
 {{< /notice >}}
 
-The different parts of jq call are as follows:
+The different parts of the jq call are as follows:
 
 | Part                      | Description                                                |
 |---------------------------|------------------------------------------------------------|
@@ -89,7 +89,7 @@ while getopts ":n:d:" opt; do
 done
 {{</highlight>}}
 
-I started the script by allowing command line arguments for a `name` and a human usable `date`. There is room in that script to only require the `year` `month` and `day` for input, but I wanted to be specific. 
+I started the script by allowing command line arguments for a `name` and a human usable `date`. There is room in that script to only require the `year` `month` and `day` for input, but I wanted to be specific and allow input of `hour`, `minute` and `second`. 
 
 #### Filtering runs by name and date
 Next was to add in a function to, in a more readable fashion, pipe our `jq` script to the API call. 
@@ -112,7 +112,7 @@ EOF
 }
 {{</highlight>}}
 
-Line 5 here being of note, `startswith` is used as if a user doesn't want to filter by a specific name we can pre-set `$select_name` to blank, where it will fetch all workflow runs. 
+Line 5 here being of note, `startswith()` is used as if a user doesn't want to filter by a specific name we can pre-set `$select_name` to blank, where it will fetch all workflow runs. 
 
 Then following Michael's advice, or in my case the inverse of his advice. 
 > jq has built in support for ISO8601 format dates, so 2021-10-02 > 2021-10-02.
@@ -141,5 +141,4 @@ printf "%s\t%s\n" "$result" "$run")
 The end result is this script here:
 - https://gist.github.com/StivDC/e793340564d23e084a8c8f6429e1ae42
 
-Feel free to comment to the gist and to use the script!
-
+Feel free to comment on the gist and to use the script!
