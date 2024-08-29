@@ -37,11 +37,6 @@ name = "About"
 url = "/about"
 weight = 4
 
-[[menu.main]]
-name = "Buy me a coffee!"
-url = "https://buymeacoffee.com/stivdc"
-weight = 5
-
 [markup]
   [markup.tableOfContents]
     endLevel = 4
