@@ -1,2 +1,2 @@
 {{ $image := resources.Get "images/defaults/favicon.ico" }}
-<link rel="icon" type="image/png" href="{{ $image  | absURL }}" />
+<link rel="icon" type="image/png" href="{{ $image.RelPermalink  | absURL }}" />
