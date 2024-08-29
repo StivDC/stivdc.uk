@@ -10,13 +10,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
 
-theme = "cactus"
-
-[module]
-  [[module.imports]]
-    path = "github.com/martignoni/hugo-notice"
-  [[module.imports]]
-    path = "cactus"
+theme = ["hugo-notice", "cactus"]
 
 #####################
 
