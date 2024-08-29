@@ -55,12 +55,12 @@ weight = 4
 
 [params]
 
-  colortheme = "dark" # dark, light, white, or classic
+  colortheme = "classic" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "I'm Steven Davies-Cortes and I've made this little webpage as a way to log anything I find interesting, to showcase any cool personal projects I'm working on and to link any apps I'm working on my other website that's to be published."
+  description = "I'm Steven Davies-Cortes and I've made this little webpage as a way to log anything I find interesting, to showcase or write about any cool projects I've done and to link any apps I'm working on my other website that's to be published."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
