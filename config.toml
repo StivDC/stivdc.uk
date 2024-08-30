@@ -12,6 +12,10 @@ disqusShortname = "example" # Used when comments is enabled. Cactus will use sit
 
 theme = ["hugo-notice", "cactus"]
 
+[services]
+  [services.googleAnalytics]
+    ID = "G-C1X1CXKSYC"
+
 #####################
 
 # summaryLength = 2
